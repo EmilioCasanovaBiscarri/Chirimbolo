@@ -12,12 +12,11 @@ const MS_DIA = 86400000;
 
 const ESTADISTICAS_INICIALES = { dias: 0, partidas: 0, aciertos: 0, racha: 0, mejorRacha: 0, ultimoDia: 0 };
 
-const LLAMA =
-  '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .8c.4 3 4.6 4.6 4.6 9A4.6 4.6 0 0 1 3.4 9.9c0-2 1.2-3.3 1.9-4.6.6 1 .9 1.9.9 3C7.5 6.7 8.4 4 8 .8z"/></svg>';
 
 const app = document.getElementById('app');
 const aviso = document.getElementById('aviso');
 const reglas = document.getElementById('reglas');
+const ventanaEstadisticas = document.getElementById('ventana-estadisticas');
 
 const parametros = new URLSearchParams(location.search);
 /** Modo prueba: ?dia=3 muestra el reto del día 3 sin tocar la partida guardada. */
@@ -171,11 +170,6 @@ function render() {
   const terminado = respuestas.length === PARTIDAS;
   if (terminado && !diaPrueba) avisarAlmanaque(numero, reto, respuestas);
 
-  document.getElementById('numero').textContent = `nº ${numero}`;
-  document.getElementById('racha').innerHTML = diaPrueba
-    ? 'prueba'
-    : `${LLAMA}<span class="visualmente-oculto">Racha: </span>${rachaVigente(guardado.estadisticas, numero)}`;
-
   app.innerHTML = `
     ${diaPrueba ? avisoPrueba(numero) : ''}
     ${progreso(reto, respuestas)}
@@ -303,8 +297,6 @@ function ficha(p) {
 function resumen(numero, reto, respuestas) {
   const aciertos = aciertosDe(reto, respuestas);
   const total = aciertos.filter(Boolean).length;
-  const e = guardado.estadisticas;
-  const porcentaje = e.partidas ? Math.round((e.aciertos / e.partidas) * 100) : 0;
   const lista = reto
     .map(
       (p, i) => `
@@ -334,12 +326,7 @@ function resumen(numero, reto, respuestas) {
     ${
       diaPrueba
         ? ''
-        : `<section class="estadisticas" aria-label="Estadísticas">
-            <div><strong>${e.dias}</strong><span>días</span></div>
-            <div><strong>${porcentaje}%</strong><span>aciertos</span></div>
-            <div><strong>${rachaVigente(e, numero)}</strong><span>racha</span></div>
-            <div><strong>${e.mejorRacha}</strong><span>mejor racha</span></div>
-          </section>`
+        : panelEstadisticas(numero)
     }
 
     <p class="vista-previa" aria-label="Resultado para compartir">${esc(lineaResultado(numero, aciertos))}</p>
@@ -348,6 +335,18 @@ function resumen(numero, reto, respuestas) {
     <a class="boton boton-almanaque" data-almanaque-volver hidden href="https://joseleking.github.io/Almanaque/">☜ Regresar al Almanaque</a>
     <p class="siguiente">Nuevas láminas en <time id="cuenta">${cuentaAtras()}</time></p>
   `;
+}
+
+/** Días, aciertos y rachas: al final de la partida y en la ventana de estadísticas. */
+function panelEstadisticas(numero) {
+  const e = guardado.estadisticas;
+  const porcentaje = e.partidas ? Math.round((e.aciertos / e.partidas) * 100) : 0;
+  return `<section class="estadisticas" aria-label="Estadísticas">
+      <div><strong>${e.dias}</strong><span>días</span></div>
+      <div><strong>${porcentaje}%</strong><span>aciertos</span></div>
+      <div><strong>${rachaVigente(e, numero)}</strong><span>racha</span></div>
+      <div><strong>${e.mejorRacha}</strong><span>mejor racha</span></div>
+    </section>`;
 }
 
 /* ---------- Acciones ---------- */
@@ -406,13 +405,19 @@ function mostrarAviso(texto) {
   setTimeout(() => aviso.classList.remove('visible'), 2000);
 }
 
-/* ---------- Reglas ---------- */
+/* ---------- Reglas y estadísticas ---------- */
 
-reglas.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => reglas.close()));
-reglas.addEventListener('click', (ev) => {
-  if (ev.target === reglas) reglas.close();
-});
+for (const dialogo of [reglas, ventanaEstadisticas]) {
+  dialogo.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => dialogo.close()));
+  dialogo.addEventListener('click', (ev) => {
+    if (ev.target === dialogo) dialogo.close();
+  });
+}
 document.getElementById('ayuda').addEventListener('click', () => reglas.showModal());
+document.getElementById('abrir-estadisticas').addEventListener('click', () => {
+  document.getElementById('estadisticas-cuerpo').innerHTML = panelEstadisticas(numeroActual());
+  ventanaEstadisticas.showModal();
+});
 
 function reglasPrimeraVez() {
   if (guardado.reglasVistas) return;
