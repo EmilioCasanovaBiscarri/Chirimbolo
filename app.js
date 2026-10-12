@@ -342,7 +342,7 @@ function resumen(numero, reto, respuestas) {
     }
 
     <button id="compartir" class="boton" type="button">Compartir</button>
-    <a class="boton boton-almanaque" data-almanaque-volver hidden href="https://joseleking.github.io/Almanaque/">☜ Regresar al Almanaque</a>
+    <a class="boton boton-almanaque" data-almanaque-volver hidden href="https://emiliocasanovabiscarri.github.io/Almanaque/">☜ Regresar al Almanaque</a>
     <p class="siguiente">Nuevas láminas en <time id="cuenta">${cuentaAtras()}</time></p>
   `;
 }
@@ -388,7 +388,7 @@ function lineaResultado(numero, aciertos) {
 }
 
 function textoCompartir(numero, aciertos) {
-  return `${lineaResultado(numero, aciertos)}\njoseleking.github.io/Chirimbolo`;
+  return `${lineaResultado(numero, aciertos)}\nemiliocasanovabiscarri.github.io/Chirimbolo`;
 }
 
 async function compartir(numero, aciertos) {

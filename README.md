@@ -3,7 +3,7 @@
 ¿Cómo se llama esta cosa? Juego diario de palabras precisas del español: cada día hay tres
 láminas, las mismas para todos, con una parte señalada por un punto rojo. Hay que elegir su
 nombre entre cuatro palabras, con un solo intento. Forma parte de la colección de
-[Almanaque](https://joseleking.github.io/Almanaque/).
+[Almanaque](https://emiliocasanovabiscarri.github.io/Almanaque/).
 
 Es una web estática (HTML, CSS y JavaScript, sin frameworks ni compilación), lista para
 GitHub Pages e instalable como aplicación (PWA).
@@ -60,9 +60,9 @@ instalada reciban la versión nueva.
 
 ## Publicar en GitHub Pages
 
-1. Sube el repositorio a GitHub (`JoseleKing/Chirimbolo`).
+1. Sube el repositorio a GitHub (`emiliocasanovabiscarri/Chirimbolo`).
 2. En **Settings → Pages**, elige **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
-3. En un par de minutos estará en <https://joseleking.github.io/Chirimbolo/>.
+3. En un par de minutos estará en <https://emiliocasanovabiscarri.github.io/Chirimbolo/>.
 
 ## Créditos
 
