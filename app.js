@@ -8,6 +8,15 @@ const INICIO = { anio: 2026, mes: 10, dia: 7 };
 const CLAVE = 'chirimbolo:v1';
 const PARTIDAS = 3;
 const NIVELES = ['Fácil', 'Media', 'Difícil'];
+/** Frase de la ficha final según los aciertos del día (0 a 3). */
+const FRASES = [
+  'Hoy las cosas se han quedado sin nombre.',
+  'Un nombre más para tu colección.',
+  'Casi todo tiene ya su nombre.',
+  'Cada cosa con su nombre.',
+];
+// Etiqueta del logo, con su agujero: marca de la ficha final.
+const ETIQUETA = 'M74 54 L152 54 Q164 54 164 66 L164 134 Q164 146 152 146 L74 146 L44 100 Z';
 const MS_DIA = 86400000;
 
 const ESTADISTICAS_INICIALES = { dias: 0, partidas: 0, aciertos: 0, racha: 0, mejorRacha: 0, ultimoDia: 0 };
@@ -172,7 +181,7 @@ function render() {
 
   app.innerHTML = `
     ${diaPrueba ? avisoPrueba(numero) : ''}
-    ${progreso(reto, respuestas)}
+    ${vista < PARTIDAS ? progreso(reto, respuestas) : ''}
     ${vista < PARTIDAS ? partida(numero, vista, reto[vista], respuestas[vista]) : resumen(numero, reto, respuestas)}
   `;
 
@@ -190,8 +199,6 @@ function render() {
   const aciertos = aciertosDe(reto, respuestas);
   const compartirBoton = app.querySelector('#compartir');
   if (compartirBoton) compartirBoton.addEventListener('click', () => compartir(numero, aciertos));
-  const copiarBoton = app.querySelector('#copiar');
-  if (copiarBoton) copiarBoton.addEventListener('click', () => copiar(numero, aciertos));
 }
 
 function avisoPrueba(numero) {
@@ -306,21 +313,26 @@ function resumen(numero, reto, respuestas) {
               <span class="marca ${aciertos[i] ? 'bien' : 'mal'}" aria-label="${aciertos[i] ? 'Acierto' : 'Fallo'}">${aciertos[i] ? '✓' : '✗'}</span>
               <span class="lema">${esc(p.palabra)}</span>
               <span class="campo">${esc(p.campo)}</span>
+              <span class="abrir" aria-hidden="true">›</span>
             </summary>
             <div class="detalle">${ficha(p)}</div>
           </details>
         </li>`,
     )
     .join('');
-  const casillas = aciertos.map((a) => `<span class="${a ? 'bien' : ''}"></span>`).join('');
-  const puedeCompartir = typeof navigator.share === 'function';
+  // Una etiqueta por lámina: llena si se acertó, hueca si no.
+  const etiquetas = aciertos
+    .map((a) => `<svg class="${a ? 'bien' : 'mal'}" viewBox="38 48 132 104" aria-hidden="true"><path d="${ETIQUETA}"/><circle cx="64" cy="100" r="8"/></svg>`)
+    .join('');
 
   return `
-    <section class="resumen">
-      <h2>${total} de ${PARTIDAS}</h2>
-      <div class="casillas" aria-hidden="true">${casillas}</div>
-      <ol class="lista-resumen">${lista}</ol>
-      <p class="nota">Toca una palabra para repasar su ficha.</p>
+    <section class="resumen" aria-label="Resultado de hoy">
+      <div class="ficha">
+        <p class="marcas" role="img" aria-label="${total} ${total === 1 ? 'acierto' : 'aciertos'} de ${PARTIDAS}">${etiquetas}</p>
+        <h2>${total} <small>de ${PARTIDAS}</small></h2>
+        <p class="frase">${FRASES[total]}</p>
+      </div>
+      <ol class="lista-resumen" aria-label="Toca una palabra para repasar su ficha">${lista}</ol>
     </section>
 
     ${
@@ -329,9 +341,7 @@ function resumen(numero, reto, respuestas) {
         : panelEstadisticas(numero)
     }
 
-    <p class="vista-previa" aria-label="Resultado para compartir">${esc(lineaResultado(numero, aciertos))}</p>
-    ${puedeCompartir ? '<button id="compartir" class="boton" type="button">Compartir</button>' : ''}
-    <button id="copiar" class="boton ${puedeCompartir ? 'boton-secundario' : ''}" type="button">Copiar resultado</button>
+    <button id="compartir" class="boton" type="button">Compartir</button>
     <a class="boton boton-almanaque" data-almanaque-volver hidden href="https://joseleking.github.io/Almanaque/">☜ Regresar al Almanaque</a>
     <p class="siguiente">Nuevas láminas en <time id="cuenta">${cuentaAtras()}</time></p>
   `;
