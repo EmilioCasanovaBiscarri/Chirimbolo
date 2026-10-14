@@ -573,6 +573,222 @@ const PLUMA = `
   <circle class="t" cx="46" cy="90" r="2.4"/>
   <path class="fino" d="M150 80 L150 100 M156 80 L156 100"/>`;
 
+const LIBRO = `
+        <path class="f" d="M62 22 L88 30 L88 170 L62 162 Z"/>
+        <path class="fondo" d="M88 30 L178 18 L178 158 L88 170 Z"/>
+        <path class="fondo" d="M62 22 L152 10 L178 18 L88 30 Z"/>
+        <path class="fino" d="M70 21 L158 10 M78 24 L166 13"/>
+        <path class="fino" d="M62 48 L88 56 M62 136 L88 144"/>
+        <path class="fino" d="M66 80 L84 85.5 L84 112 L66 106.5 Z"/>
+        <path class="fino" d="M102 58 L164 50 M110 70 L156 64"/>`;
+
+const PUERTA_JAMBAS = `
+        <path d="M0 176 L240 176"/>
+        <rect x="54" y="8" width="132" height="18" class="f"/>
+        <rect x="58" y="26" width="16" height="150" class="f"/>
+        <rect x="166" y="26" width="16" height="150" class="f"/>
+        <rect x="74" y="26" width="92" height="150" class="fondo"/>
+        <rect class="fino" x="84" y="38" width="72" height="54"/>
+        <rect class="fino" x="84" y="104" width="72" height="62"/>
+        <circle cx="152" cy="100" r="4"/>`;
+
+const HUEVO = `
+  <path d="M18 90 C18 44 64 22 124 22 C186 22 224 54 224 90 C224 126 186 158 124 158 C64 158 18 136 18 90 Z"/>
+  <path class="fino" d="M26 90 C26 50 68 30 124 30 C180 30 216 58 216 90 C216 122 180 150 124 150 C68 150 26 130 26 90 Z"/>
+  <path class="fino" d="M40 60 C52 74 52 106 40 120"/>
+  <circle class="f" cx="128" cy="90" r="34"/>
+  <ellipse class="fino" cx="128" cy="61" rx="8" ry="3.5"/>
+  <path class="fino" d="M94 90 c-3 -5 -7 5 -10 0 s-7 5 -10 0 s-7 5 -10 0 s-7 5 -10 0"/>
+  <path class="fino" d="M162 90 c3 -5 7 5 10 0 s7 5 10 0 s7 5 10 0 s7 5 10 0"/>`;
+
+const DESPERTADOR = `
+        <path class="f" d="M64 40 A26 26 0 0 1 102 22 Z M176 40 A26 26 0 0 0 138 22 Z"/>
+        <path d="M86 34 L78 28 M154 34 L162 28"/>
+        <circle class="fondo" cx="120" cy="96" r="62"/>
+        <circle class="fino" cx="120" cy="96" r="54"/>
+        <path class="fino" d="M120 46 L120 54 M120 138 L120 146 M70 96 L78 96 M162 96 L170 96 M145 53 L141 60 M95 139 L99 132 M163 71 L156 75 M77 121 L84 117 M163 121 L156 117 M77 71 L84 75 M145 139 L141 132 M95 53 L99 60"/>
+        <path class="mango" d="M120 96 L150 80"/>
+        <path d="M120 96 L104 52"/>
+        <circle class="t" cx="120" cy="96" r="4"/>
+        <path d="M84 150 L72 168 M156 150 L168 168"/>`;
+
+const CUCHILLO = `
+        <path class="fondo" d="M16 92 Q60 86 122 86 L122 108 Q70 112 16 92 Z"/>
+        <path class="fino" d="M28 92 Q70 92 118 96"/>
+        <rect x="122" y="82" width="98" height="30" rx="8" class="f"/>
+        <rect class="fino oculto fondo" x="122" y="92" width="88" height="10"/>
+        <circle class="fino fondo" cx="148" cy="97" r="3"/><circle class="fino fondo" cx="180" cy="97" r="3"/>`;
+
+const OJO = `
+        <path class="fino" d="M30 44 C70 20 160 18 206 46"/>
+        <path class="fondo" d="M36 96 C70 52 160 44 210 90 C164 136 72 140 36 96 Z"/>
+        <path class="fino" d="M48 80 C80 52 152 46 196 76"/>
+        <circle class="f" cx="124" cy="92" r="30"/>
+        <circle class="t" cx="124" cy="92" r="12"/>
+        <circle class="fondo" cx="130" cy="86" r="3.5"/>
+        <path class="fino" d="M104 78 L96 82 M144 78 L152 82 M110 70 L104 74 M138 70 L144 74"/>
+        <path class="f" d="M36 96 C42 90 48 90 52 96 C48 102 42 102 36 96 Z"/>
+        <path class="fino" d="M76 66 L72 56 M96 58 L94 46 M120 54 L120 42 M144 56 L148 44 M168 62 L174 52 M188 72 L196 64"/>
+        <path class="fino" d="M70 124 C110 140 160 134 200 104"/>`;
+
+const PIANO = `
+        <path d="M8 34 L232 34"/><path class="fino" d="M8 28 L232 28"/>
+        <path class="f" d="M160 36 L184 36 L184 50 L160 50 Z"/>
+        <path class="fino" d="M172 50 L172 112"/>
+        <path class="mango" d="M110 60 L110 130"/>
+        <path class="f" d="M98 52 C98 40 122 40 122 52 L122 64 L98 64 Z"/>
+        <path class="fino" d="M98 52 C104 47 116 47 122 52"/>
+        <circle class="fondo" cx="110" cy="134" r="6"/>
+        <path class="fondo" d="M14 148 L226 148 L226 160 L14 160 Z"/>
+        <path class="t" d="M150 160 L162 160 L156 172 Z"/>
+        <path d="M110 140 L112 148 M172 112 L176 148"/>
+        <path class="fondo" d="M8 142 L40 142 L40 162 L8 162 Z"/>`;
+
+const HERRADURA = `
+  <path class="f" d="M68 160 C54 112 56 62 88 36 C106 22 134 22 152 36 C184 62 186 112 172 160 L150 160 C160 114 158 74 140 58 C128 48 112 48 100 58 C82 74 80 114 90 160 Z"/>
+  <path class="fino" d="M79 156 C68 112 70 70 96 48 C110 38 130 38 144 48 C170 70 172 112 161 156"/>
+  <rect class="t" x="66" y="124" width="7" height="12" rx="2"/>
+  <rect class="t" x="64" y="94" width="7" height="12" rx="2"/>
+  <rect class="t" x="72" y="64" width="7" height="12" rx="2" transform="rotate(28 75 70)"/>
+  <rect class="t" x="167" y="124" width="7" height="12" rx="2"/>
+  <rect class="t" x="169" y="94" width="7" height="12" rx="2"/>
+  <rect class="t" x="161" y="64" width="7" height="12" rx="2" transform="rotate(-28 165 70)"/>`;
+
+const CAMPANA = `
+        <rect class="f" x="88" y="12" width="64" height="12" rx="2"/>
+        <path d="M110 24 L110 32 M130 24 L130 32"/>
+        <path class="fondo" d="M120 30 C96 30 88 50 86 80 C84 110 78 126 58 140 L182 140 C162 126 156 110 154 80 C152 50 144 30 120 30 Z"/>
+        <path d="M56 140 C56 150 184 150 184 140"/>
+        <path class="fino" d="M90 96 C110 100 130 100 150 96 M92 108 C112 112 128 112 148 108"/>
+        <path class="fino oculto" d="M120 36 L120 140"/>
+        <path d="M120 144 L120 150"/>
+        <ellipse class="t" cx="120" cy="158" rx="7" ry="9"/>`;
+
+const GORRA = `
+        <path class="fondo" d="M46 124 C44 76 84 44 128 44 C170 44 196 74 196 124 Z"/>
+        <path class="fino" d="M128 46 C116 70 110 98 112 124 M128 46 C146 70 156 98 158 124 M128 46 C100 62 80 92 74 124"/>
+        <circle class="t" cx="128" cy="44" r="4.5"/>
+        <path d="M44 124 L198 124"/>
+        <path class="f" d="M150 124 L194 124 C212 124 230 128 236 136 C220 142 190 140 150 130 Z"/>`;
+
+const NARIZ = `
+  <path d="M98 14 C102 56 96 88 82 110"/>
+  <path d="M142 14 C138 56 144 88 158 110"/>
+  <path d="M82 110 C66 120 62 140 76 150 C86 156 96 152 104 146"/>
+  <path d="M158 110 C174 120 178 140 164 150 C154 156 144 152 136 146"/>
+  <path d="M104 146 C110 156 130 156 136 146"/>
+  <path class="t" d="M90 141 C94 132 108 133 111 143 C104 148 95 148 90 141 Z"/>
+  <path class="t" d="M150 141 C146 132 132 133 129 143 C136 148 145 148 150 141 Z"/>
+  <path class="fino" d="M108 116 C114 108 126 108 132 116"/>
+  <path class="fino" d="M70 132 C74 124 80 120 88 120"/>
+  <path class="fino" d="M170 132 C166 124 160 120 152 120"/>`;
+
+const DIENTE_DE_LEON = `
+        <path d="M118 180 C116 150 114 130 116 84"/>
+        <path class="fino" d="${VILANO_CABEZA}"/>
+        <circle class="t" cx="116" cy="74" r="7"/>
+        <path class="fino" d="M192 42l-8.5 -12.4M192 42l-3.7 -14.5M192 42l1.5 -14.9M192 42l6.5 -13.5M192 42l10.8 -10.5M192 42l13.7 -6.1"/>
+        <path class="fino" d="M192 42 L186 70"/>
+        <path class="t" d="M184 70 L188 70 L186 82 Z"/>`;
+
+const PUENTE = `
+  <path class="f" d="M6 30 L234 30 L234 44 L6 44 Z"/>
+  <path d="M6 44 L6 150 M234 44 L234 150"/>
+  <path d="M20 150 L20 112 A44 48 0 0 1 108 112 L108 150"/>
+  <path d="M132 150 L132 112 A44 48 0 0 1 220 112 L220 150"/>
+  <path class="f" d="M108 150 L108 118 L120 100 L132 118 L132 150 Z"/>
+  <path class="fino" d="M120 100 L120 150"/>
+  <path class="fino" d="M6 58 L234 58"/>
+  <path class="fino" d="M30 80 L40 86 M52 70 L56 78 M76 70 L72 78 M98 80 L88 86 M142 80 L152 86 M164 70 L168 78 M188 70 L184 78 M210 80 L200 86"/>
+  <path class="fino" d="M0 160 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+  <path class="fino" d="M10 172 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>`;
+
+const VIOLIN = `
+        <path class="fondo" d="M14 160 L124 92 L136 108 L28 174 Z"/>
+        <path class="t" d="M20 160 L116 100 L122 108 L26 168 Z"/>
+        <path class="fondo" d="M122 92 L170 60 L186 78 L136 108 Z"/>
+        <path class="t" d="M134 96 L170 72 L178 80 L140 104 Z"/>
+        <path d="M140 84 L130 70 M156 74 L146 60 M150 112 L160 124 M166 102 L176 114"/>
+        <ellipse class="f" cx="127" cy="65" rx="6" ry="9" transform="rotate(-34 127 65)"/>
+        <ellipse class="f" cx="143" cy="55" rx="6" ry="9" transform="rotate(-34 143 55)"/>
+        <ellipse class="f" cx="163" cy="129" rx="6" ry="9" transform="rotate(-34 163 129)"/>
+        <ellipse class="f" cx="179" cy="119" rx="6" ry="9" transform="rotate(-34 179 119)"/>
+        <circle class="fondo" cx="198" cy="44" r="25"/>
+        <path d="M181.0 61.0 L180.3 60.1 L179.7 59.3 L179.0 58.4 L178.4 57.5 L177.9 56.6 L177.4 55.6 L176.9 54.6 L176.5 53.6 L176.2 52.6 L175.9 51.6 L175.6 50.6 L175.4 49.6 L175.2 48.5 L175.1 47.5 L175.0 46.4 L175.0 45.4 L175.0 44.3 L175.1 43.3 L175.2 42.2 L175.4 41.2 L175.6 40.2 L175.8 39.2 L176.1 38.2 L176.5 37.2 L176.8 36.3 L177.3 35.4 L177.7 34.5 L178.2 33.6 L178.8 32.7 L179.4 31.9 L180.0 31.1 L180.6 30.3 L181.3 29.6 L182.0 28.9 L182.8 28.2 L183.5 27.6 L184.3 27.0 L185.2 26.4 L186.0 25.9 L186.9 25.5 L187.7 25.0 L188.6 24.6 L189.5 24.3 L190.5 24.0 L191.4 23.7 L192.4 23.5 L193.3 23.3 L194.3 23.2 L195.2 23.1 L196.2 23.0 L197.1 23.0 L198.1 23.1 L199.0 23.2 L200.0 23.3 L200.9 23.5 L201.8 23.7 L202.7 23.9 L203.6 24.2 L204.5 24.5 L205.3 24.9 L206.2 25.3 L207.0 25.8 L207.8 26.2 L208.5 26.7 L209.3 27.3 L210.0 27.9 L210.7 28.5 L211.3 29.1 L211.9 29.8 L212.5 30.5 L213.1 31.2 L213.6 31.9 L214.1 32.7 L214.5 33.4 L214.9 34.2 L215.3 35.0 L215.6 35.8 L215.9 36.7 L216.2 37.5 L216.4 38.4 L216.6 39.2 L216.7 40.1 L216.8 40.9 L216.9 41.8 L216.9 42.7 L216.9 43.5 L216.8 44.4 L216.7 45.2 L216.6 46.1 L216.4 46.9 L216.2 47.7 L216.0 48.6 L215.7 49.3 L215.4 50.1 L215.0 50.9 L214.7 51.6 L214.2 52.3 L213.8 53.0 L213.3 53.7 L212.8 54.4 L212.3 55.0 L211.7 55.6 L211.1 56.2 L210.5 56.7 L209.9 57.2 L209.2 57.7 L208.6 58.1 L207.9 58.6 L207.2 58.9 L206.5 59.3 L205.7 59.6 L205.0 59.9 L204.3 60.1 L203.5 60.3 L202.7 60.5 L202.0 60.7 L201.2 60.8 L200.4 60.8 L199.7 60.9 L198.9 60.9 L198.1 60.8 L197.4 60.8 L196.6 60.7 L195.9 60.5 L195.1 60.3 L194.4 60.1 L193.7 59.9 L193.0 59.6 L192.3 59.3 L191.6 59.0 L191.0 58.6 L190.4 58.3 L189.7 57.8 L189.2 57.4 L188.6 56.9 L188.1 56.5 L187.5 56.0 L187.0 55.4 L186.6 54.9 L186.1 54.3 L185.7 53.7 L185.4 53.1 L185.0 52.5 L184.7 51.9 L184.4 51.2 L184.1 50.6 L183.9 49.9 L183.7 49.3 L183.5 48.6 L183.4 47.9 L183.3 47.2 L183.2 46.6 L183.2 45.9 L183.2 45.2 L183.2 44.5 L183.2 43.8 L183.3 43.2 L183.4 42.5 L183.6 41.9 L183.7 41.2 L183.9 40.6 L184.2 40.0 L184.4 39.4 L184.7 38.8 L185.0 38.2 L185.3 37.7 L185.7 37.1 L186.1 36.6 L186.5 36.1 L186.9 35.6 L187.3 35.2 L187.8 34.7 L188.2 34.3 L188.7 33.9 L189.2 33.6 L189.8 33.2 L190.3 32.9 L190.8 32.6 L191.4 32.3 L191.9 32.1 L192.5 31.9 L193.1 31.7 L193.7 31.6 L194.3 31.4 L194.8 31.3 L195.4 31.3 L196.0 31.2 L196.6 31.2 L197.2 31.2 L197.8 31.3 L198.4 31.3 L198.9 31.4 L199.5 31.5 L200.0 31.7 L200.6 31.8 L201.1 32.0 L201.6 32.2 L202.2 32.5 L202.7 32.7 L203.1 33.0 L203.6 33.3 L204.1 33.6 L204.5 33.9 L204.9 34.3 L205.3 34.7 L205.7 35.0 L206.0 35.4 L206.4 35.9 L206.7 36.3 L207.0 36.7 L207.3 37.2 L207.5 37.6 L207.7 38.1 L207.9 38.6 L208.1 39.1 L208.3 39.5 L208.4 40.0 L208.5 40.5 L208.6 41.0 L208.7 41.5 L208.7 42.0 L208.8 42.5 L208.7 43.0 L208.7 43.5 L208.7 44.0 L208.6 44.5 L208.5 45.0 L208.4 45.4 L208.3 45.9 L208.1 46.3 L207.9 46.8 L207.7 47.2 L207.5 47.6 L207.3 48.0 L207.1 48.4 L206.8 48.8 L206.5 49.2 L206.2 49.5 L205.9 49.8 L205.6 50.2 L205.3 50.5 L204.9 50.7 L204.6 51.0 L204.2 51.3 L203.8 51.5 L203.5 51.7 L203.1 51.9 L202.7 52.0 L202.3 52.2 L201.9 52.3 L201.5 52.4 L201.1 52.5 L200.7 52.6 L200.3 52.7 L199.9 52.7 L199.4 52.7 L199.0 52.7 L198.6 52.7 L198.2 52.7 L197.8 52.6 L197.5 52.5 L197.1 52.4 L196.7 52.3 L196.3 52.2 L196.0 52.1 L195.6 51.9 L195.3 51.7 L195.0 51.5 L194.7 51.3 L194.4 51.1 L194.1 50.9 L193.8 50.7 L193.5 50.4 L193.3 50.2 L193.0 49.9 L192.8 49.6 L192.6 49.4 L192.4 49.1 L192.2 48.8 L192.1 48.5 L191.9 48.2 L191.8 47.8 L191.7 47.5 L191.6 47.2 L191.5 46.9 L191.4 46.6 L191.4 46.3 L191.3 45.9 L191.3 45.6 L191.3 45.3 L191.3 45.0 L191.3 44.7 L191.4 44.4 L191.4 44.1 L191.5 43.8 L191.6 43.5 L191.6 43.2 L191.7 42.9 L191.9 42.6 L192.0 42.4 L192.1 42.1 L192.3 41.9 L192.4 41.7 L192.6 41.4 L192.8 41.2 L192.9 41.0 L193.1 40.8 L193.3 40.6 L193.5 40.5 L193.7 40.3 L194.0 40.2 L194.2 40.0 L194.4 39.9 L194.6 39.8 L194.9 39.7 L195.1 39.6 L195.3 39.5 L195.6 39.4 L195.8 39.4 L196.0 39.4 L196.3 39.3 L196.5 39.3 L196.7 39.3 L197.0 39.3 L197.2 39.3 L197.4 39.3 L197.6 39.4 L197.8 39.4 L198.0 39.5 L198.2 39.5 L198.4 39.6 L198.6 39.7 L198.8 39.8 L199.0 39.9 L199.1 40.0 L199.3 40.1 L199.5 40.2 L199.6 40.4 L199.7 40.5 L199.9 40.6 L200.0 40.8 L200.1 40.9 L200.2 41.0 L200.3 41.2 L200.4 41.3 L200.5 41.5 L200.5 41.7 L200.6 41.8 L200.6 42.0 L200.7 42.1 L200.7 42.3 L200.7 42.4 L200.8 42.6 L200.8 42.7 L200.8 42.9 L200.8 43.0 L200.7 43.2 L200.7 43.3 L200.7 43.4 L200.6 43.6"/>
+        <circle class="t" cx="198.0" cy="44" r="2.5"/>`;
+
+const BOTELLA = `
+        <path class="fondo" d="M92 172 L92 86 C92 66 110 60 112 42 L112 18 L128 18 L128 42 C130 60 148 66 148 86 L148 172 Q120 178 92 172 Z"/>
+        <rect x="113" y="6" width="14" height="12" class="f"/>
+        <path class="fino" d="M112 26 L128 26"/>
+        <rect class="fino" x="98" y="112" width="44" height="38"/>
+        <path class="fino" d="M106 124 L134 124 M110 134 L130 134"/>`;
+
+const BOTIJO = `
+        <path class="fondo" d="M120 50 C170 50 196 82 196 112 C196 146 164 166 120 166 C76 166 44 146 44 112 C44 82 70 50 120 50 Z"/>
+        <path class="fino" d="M52 128 C90 140 150 140 188 128"/>
+        <path class="fondo" d="M86 60 C84 2 156 2 154 60 L144 58 C146 16 94 16 96 58 Z"/>
+        <path class="fondo" d="M146 62 L176 22 L184 28 L160 68 Z"/>
+        <path class="fondo" d="M66 66 L56 48 L80 40 L86 60 Z"/>
+        <ellipse class="f" cx="68" cy="44" rx="13" ry="5" transform="rotate(-18 68 44)"/>`;
+
+const PARAGUAS = `
+        <g transform="rotate(18 120 90)">
+          <path class="mango" d="M120 40 L120 22 C120 8 96 8 96 22 C96 28 100 30 102 28"/>
+          <path class="fondo" d="M120 44 C100 66 102 120 120 152 C138 120 140 66 120 44 Z"/>
+          <path class="fino" d="M120 44 L112 140 M120 44 L128 140 M120 44 L120 152"/>
+          <path class="fino" d="M106 96 L134 96"/>
+          <path class="t" d="M117 152 L123 152 L122 172 L118 172 Z"/>
+        </g>`;
+
+const MARTILLO = `
+  <path class="f" d="M112 62 L106 168 Q118 176 130 168 L124 62 Z"/>
+  <path d="M46 30 L64 28 L64 66 L46 64 Z"/>
+  <path d="M64 30 L104 34 L132 34 L176 42 L198 48 L176 54 L132 60 L104 60 L64 64"/>
+  <path class="fino" d="M104 34 L104 60 M132 34 L132 60"/>
+  <path class="fino" d="M116 76 L114 156"/>`;
+
+const FORMON = `
+        <path class="fondo" d="M14 98 L30 86 L118 86 L118 98 Z"/>
+        <path class="fino" d="M30 86 L30 98"/>
+        <path class="f" d="M118 83 L134 81 L134 103 L118 101 Z"/>
+        <path class="fino" d="M122 82.5 L122 101.5 M130 81.5 L130 102.5"/>
+        <path class="fondo" d="M134 80 C154 72 200 72 214 80 C222 86 222 98 214 104 C200 112 154 112 134 104 Z"/>
+        <path class="fino" d="M146 88 C170 84 192 86 208 90 M150 98 C172 100 190 100 206 96"/>`;
+
+const CHAQUETA = `
+        <path class="fondo" d="M74 18 L120 34 L166 18 L200 30 L222 150 L196 156 L178 70 L178 176 L62 176 L62 70 L44 156 L18 150 L40 30 Z"/>
+        <path class="f" d="M74 18 L104 30 L112 92 L92 60 L100 50 Z M166 18 L136 30 L128 92 L148 60 L140 50 Z"/>
+        <path d="M120 34 L120 176"/>
+        <circle class="fino" cx="124" cy="112" r="3"/><circle class="fino" cx="124" cy="140" r="3"/>
+        <path class="f" d="M196 156 L222 150 L226 168 L198 172 Z M44 156 L18 150 L14 168 L42 172 Z"/>
+        <circle class="fino" cx="206" cy="162" r="2"/><circle class="fino" cx="214" cy="160" r="2"/>
+        <path class="fino" d="M78 130 L104 130 M136 130 L162 130"/>`;
+
+const GAFAS = `
+        <path class="fondo" d="M30 70 C30 54 86 54 96 70 C100 92 90 112 62 112 C36 112 28 92 30 70 Z"/>
+        <path class="fondo" d="M124 70 C134 54 190 54 190 70 C192 92 184 112 158 112 C130 112 120 92 124 70 Z"/>
+        <path class="fino" d="M40 66 C58 62 74 64 84 70 M134 70 C146 64 166 62 180 66"/>
+        <path d="M96 70 C104 62 116 62 124 70"/>
+        <path d="M190 66 L198 64 L232 104 C234 110 228 116 222 112"/>
+        <path d="M30 66 L22 64 L10 92"/>`;
+
+const FLOR = `
+        <path d="M120 180 L120 112"/>
+        <path class="fondo" d="M120 112 C98 112 86 108 80 120 C90 110 106 104 120 112 Z"/>
+        <path class="fondo" d="M92 92 C80 60 90 30 120 18 C150 30 160 60 148 92 C136 102 104 102 92 92 Z"/>
+        <path class="fino" d="M120 18 C112 50 112 80 120 98 M104 34 C102 60 106 82 112 98 M136 34 C138 60 134 82 128 98"/>
+        <path class="f" d="M120 114 C104 112 90 104 84 86 C98 92 110 96 120 100 C130 96 142 92 156 86 C150 104 136 112 120 114 Z"/>
+        <path class="fino" d="M120 114 L120 96 M104 106 C110 100 114 98 120 98"/>
+        <path class="fondo" d="M120 150 C136 136 158 136 172 144 C156 154 138 156 120 150 Z"/>`;
+
+const BOMBILLA = `
+        <path class="fondo" d="M106 112 C82 96 66 70 76 48 C86 24 154 24 164 48 C174 70 158 96 134 112 Z"/>
+        <path class="fino" d="M112 112 L112 74 M128 112 L128 74 M112 74 L116 66 L120 74 L124 66 L128 74"/>
+        <rect x="104" y="112" width="32" height="38" class="f"/>
+        <path class="fino" d="M104 118 L136 122 M104 126 L136 130 M104 134 L136 138 M104 142 L136 146"/>
+        <path class="t" d="M110 150 L130 150 L124 160 L116 160 Z"/>`;
+
 const DIAS = [
   /* ---------- Día 1 ---------- */
   [
@@ -716,15 +932,7 @@ const DIAS = [
       falsas: ['dintel', 'umbral', 'montante'],
       definicion: 'Cada una de las dos piezas que, puestas verticalmente a los lados de una puerta o ventana, sostienen el dintel o el arco.',
       curiosidad: 'Viene del francés «jambe», ‘pierna’: las jambas son las piernas sobre las que se apoya la puerta, y el dintel, lo que cargan encima.',
-      dibujo: `
-        <path d="M0 176 L240 176"/>
-        <rect x="54" y="8" width="132" height="18" class="f"/>
-        <rect x="58" y="26" width="16" height="150" class="f"/>
-        <rect x="166" y="26" width="16" height="150" class="f"/>
-        <rect x="74" y="26" width="92" height="150" class="fondo"/>
-        <rect class="fino" x="84" y="38" width="72" height="54"/>
-        <rect class="fino" x="84" y="104" width="72" height="62"/>
-        <circle cx="152" cy="100" r="4"/>`,
+      dibujo: PUERTA_JAMBAS,
       senal: [174, 82],
       rotulo: [218, 50],
     },
@@ -759,14 +967,7 @@ const DIAS = [
       falsas: ['corte', 'cubierta', 'canto'],
       definicion: 'Parte del libro opuesta al corte de las hojas, por donde se cosen los pliegos y donde suele ir el título.',
       curiosidad: 'La etiqueta que se pega en el lomo con el título o la signatura se llama «tejuelo». En España los títulos del lomo suelen leerse de abajo arriba; en los libros en inglés, de arriba abajo.',
-      dibujo: `
-        <path class="f" d="M62 22 L88 30 L88 170 L62 162 Z"/>
-        <path class="fondo" d="M88 30 L178 18 L178 158 L88 170 Z"/>
-        <path class="fondo" d="M62 22 L152 10 L178 18 L88 30 Z"/>
-        <path class="fino" d="M70 21 L158 10 M78 24 L166 13"/>
-        <path class="fino" d="M62 48 L88 56 M62 136 L88 144"/>
-        <path class="fino" d="M66 80 L84 85.5 L84 112 L66 106.5 Z"/>
-        <path class="fino" d="M102 58 L164 50 M110 70 L156 64"/>`,
+      dibujo: LIBRO,
       senal: [75, 128],
       rotulo: [24, 150],
     },
@@ -815,12 +1016,7 @@ const DIAS = [
       falsas: ['marbete', 'precinto', 'tapón'],
       definicion: 'Cuello estrecho que tienen algunas vasijas, como garrafas o botellas.',
       curiosidad: 'Quien «está hasta el gollete» está harto o lleno hasta arriba, como una botella hasta el cuello. Comparte origen con «gola» y «gollería».',
-      dibujo: `
-        <path class="fondo" d="M92 172 L92 86 C92 66 110 60 112 42 L112 18 L128 18 L128 42 C130 60 148 66 148 86 L148 172 Q120 178 92 172 Z"/>
-        <rect x="113" y="6" width="14" height="12" class="f"/>
-        <path class="fino" d="M112 26 L128 26"/>
-        <rect class="fino" x="98" y="112" width="44" height="38"/>
-        <path class="fino" d="M106 124 L134 124 M110 134 L130 134"/>`,
+      dibujo: BOTELLA,
       senal: [128, 32],
       rotulo: [190, 26],
     },
@@ -831,12 +1027,7 @@ const DIAS = [
       falsas: ['filamento', 'ampolla', 'culote'],
       definicion: 'Parte metálica de la bombilla que la sujeta al portalámparas y la conecta al circuito eléctrico.',
       curiosidad: 'Es el diminutivo de «casco». El de rosca más común se llama E27: la E es de Edison y el 27, los milímetros que mide de ancho. También se llama casquillo la vaina de metal de un cartucho.',
-      dibujo: `
-        <path class="fondo" d="M106 112 C82 96 66 70 76 48 C86 24 154 24 164 48 C174 70 158 96 134 112 Z"/>
-        <path class="fino" d="M112 112 L112 74 M128 112 L128 74 M112 74 L116 66 L120 74 L124 66 L128 74"/>
-        <rect x="104" y="112" width="32" height="38" class="f"/>
-        <path class="fino" d="M104 118 L136 122 M104 126 L136 130 M104 134 L136 138 M104 142 L136 146"/>
-        <path class="t" d="M110 150 L130 150 L124 160 L116 160 Z"/>`,
+      dibujo: BOMBILLA,
       senal: [136, 128],
       rotulo: [192, 150],
     },
@@ -847,12 +1038,7 @@ const DIAS = [
       falsas: ['recazo', 'cachas', 'remache'],
       definicion: 'Parte de una herramienta o de otro objeto, adelgazada para introducirla en el mango.',
       curiosidad: 'En los buenos cuchillos la espiga recorre el mango entero y se ve como una franja de acero entre las dos cachas. Es la misma palabra que la espiga del trigo, por su forma alargada y fina.',
-      dibujo: `
-        <path class="fondo" d="M16 92 Q60 86 122 86 L122 108 Q70 112 16 92 Z"/>
-        <path class="fino" d="M28 92 Q70 92 118 96"/>
-        <rect x="122" y="82" width="98" height="30" rx="8" class="f"/>
-        <rect class="fino oculto fondo" x="122" y="92" width="88" height="10"/>
-        <circle class="fino fondo" cx="148" cy="97" r="3"/><circle class="fino fondo" cx="180" cy="97" r="3"/>`,
+      dibujo: CUCHILLO,
       senal: [200, 97],
       rotulo: [206, 150],
     },
@@ -1023,14 +1209,7 @@ const DIAS = [
       falsas: ['corola', 'estambre', 'pistilo'],
       definicion: 'Cubierta externa de la flor, formada por los sépalos, casi siempre verdes y recios.',
       curiosidad: 'Del latín «calix», ‘copa’, como el cáliz de misa: los sépalos sostienen la flor igual que una copa. Lo de dentro, los pétalos, forma la corola.',
-      dibujo: `
-        <path d="M120 180 L120 112"/>
-        <path class="fondo" d="M120 112 C98 112 86 108 80 120 C90 110 106 104 120 112 Z"/>
-        <path class="fondo" d="M92 92 C80 60 90 30 120 18 C150 30 160 60 148 92 C136 102 104 102 92 92 Z"/>
-        <path class="fino" d="M120 18 C112 50 112 80 120 98 M104 34 C102 60 106 82 112 98 M136 34 C138 60 134 82 128 98"/>
-        <path class="f" d="M120 114 C104 112 90 104 84 86 C98 92 110 96 120 100 C130 96 142 92 156 86 C150 104 136 112 120 114 Z"/>
-        <path class="fino" d="M120 114 L120 96 M104 106 C110 100 114 98 120 98"/>
-        <path class="fondo" d="M120 150 C136 136 158 136 172 144 C156 154 138 156 120 150 Z"/>`,
+      dibujo: FLOR,
       senal: [148, 96],
       rotulo: [204, 118],
     },
@@ -1041,13 +1220,7 @@ const DIAS = [
       falsas: ['aquenio', 'involucro', 'receptáculo'],
       definicion: 'Penacho de pelos o filamentos que corona el fruto de muchas plantas compuestas y le sirve para volar con el viento.',
       curiosidad: 'Cada «paracaídas» del diente de león es un vilano con su semilla colgando. El DLE llama también vilano a la flor del cardo.',
-      dibujo: `
-        <path d="M118 180 C116 150 114 130 116 84"/>
-        <path class="fino" d="${VILANO_CABEZA}"/>
-        <circle class="t" cx="116" cy="74" r="7"/>
-        <path class="fino" d="M192 42l-8.5 -12.4M192 42l-3.7 -14.5M192 42l1.5 -14.9M192 42l6.5 -13.5M192 42l10.8 -10.5M192 42l13.7 -6.1"/>
-        <path class="fino" d="M192 42 L186 70"/>
-        <path class="t" d="M184 70 L188 70 L186 82 Z"/>`,
+      dibujo: DIENTE_DE_LEON,
       senal: [194, 30],
       rotulo: [222, 92],
     },
@@ -1079,14 +1252,7 @@ const DIAS = [
       falsas: ['varilla', 'puño', 'mástil'],
       definicion: 'Pieza, normalmente de metal, que se pone en la punta de un bastón, un paraguas o la vaina de una espada, en el extremo opuesto al puño.',
       curiosidad: 'De ahí la expresión «por contera», que significa ‘para remate, por si fuera poco’: «Llegó tarde y, por contera, sin el regalo».',
-      dibujo: `
-        <g transform="rotate(18 120 90)">
-          <path class="mango" d="M120 40 L120 22 C120 8 96 8 96 22 C96 28 100 30 102 28"/>
-          <path class="fondo" d="M120 44 C100 66 102 120 120 152 C138 120 140 66 120 44 Z"/>
-          <path class="fino" d="M120 44 L112 140 M120 44 L128 140 M120 44 L120 152"/>
-          <path class="fino" d="M106 96 L134 96"/>
-          <path class="t" d="M117 152 L123 152 L122 172 L118 172 Z"/>
-        </g>`,
+      dibujo: PARAGUAS,
       senal: [97, 160],
       rotulo: [40, 160],
     },
@@ -1097,13 +1263,7 @@ const DIAS = [
       falsas: ['espiga', 'cabo', 'bisel'],
       definicion: 'Abrazadera de metal que se pone de remate o refuerzo en el extremo de algo, como el mango de una herramienta o de una navaja, para que no se raje.',
       curiosidad: 'Viene del francés «virole». En el DLE la virola es también la contera de un bastón o un paraguas: la pieza de la partida anterior.',
-      dibujo: `
-        <path class="fondo" d="M14 98 L30 86 L118 86 L118 98 Z"/>
-        <path class="fino" d="M30 86 L30 98"/>
-        <path class="f" d="M118 83 L134 81 L134 103 L118 101 Z"/>
-        <path class="fino" d="M122 82.5 L122 101.5 M130 81.5 L130 102.5"/>
-        <path class="fondo" d="M134 80 C154 72 200 72 214 80 C222 86 222 98 214 104 C200 112 154 112 134 104 Z"/>
-        <path class="fino" d="M146 88 C170 84 192 86 208 90 M150 98 C172 100 190 100 206 96"/>`,
+      dibujo: FORMON,
       senal: [126, 92],
       rotulo: [150, 36],
     },
@@ -1117,12 +1277,7 @@ const DIAS = [
       falsas: ['ala', 'copa', 'botón'],
       definicion: 'Ala pequeña que tienen en la parte delantera las gorras, los quepis y otras prendas semejantes, para resguardar la vista.',
       curiosidad: 'Antes de las gorras, la visera era la pieza móvil del yelmo que protegía la cara, con rendijas para ver. Hoy también se llama así a la que se lleva sola, sin copa, para el sol.',
-      dibujo: `
-        <path class="fondo" d="M46 124 C44 76 84 44 128 44 C170 44 196 74 196 124 Z"/>
-        <path class="fino" d="M128 46 C116 70 110 98 112 124 M128 46 C146 70 156 98 158 124 M128 46 C100 62 80 92 74 124"/>
-        <circle class="t" cx="128" cy="44" r="4.5"/>
-        <path d="M44 124 L198 124"/>
-        <path class="f" d="M150 124 L194 124 C212 124 230 128 236 136 C220 142 190 140 150 130 Z"/>`,
+      dibujo: GORRA,
       senal: [214, 132],
       rotulo: [196, 168],
     },
@@ -1230,15 +1385,7 @@ const DIAS = [
       falsas: ['yugo', 'asa', 'mazo'],
       definicion: 'Pieza metálica, generalmente en forma de pera, que pende en lo interior de las campanas y con la cual se golpean estas para hacerlas sonar.',
       curiosidad: 'Por la imagen de algo que no para de golpear, «badajo» se dice también de la persona habladora y necia.',
-      dibujo: `
-        <rect class="f" x="88" y="12" width="64" height="12" rx="2"/>
-        <path d="M110 24 L110 32 M130 24 L130 32"/>
-        <path class="fondo" d="M120 30 C96 30 88 50 86 80 C84 110 78 126 58 140 L182 140 C162 126 156 110 154 80 C152 50 144 30 120 30 Z"/>
-        <path d="M56 140 C56 150 184 150 184 140"/>
-        <path class="fino" d="M90 96 C110 100 130 100 150 96 M92 108 C112 112 128 112 148 108"/>
-        <path class="fino oculto" d="M120 36 L120 140"/>
-        <path d="M120 144 L120 150"/>
-        <ellipse class="t" cx="120" cy="158" rx="7" ry="9"/>`,
+      dibujo: CAMPANA,
       senal: [120, 158],
       rotulo: [182, 172],
     },
@@ -1352,16 +1499,7 @@ const DIAS = [
       falsas: ['esfera', 'bisel', 'péndola'],
       definicion: 'Saetilla que en el reloj y en otros instrumentos sirve para señalar las horas, los minutos o los grados.',
       curiosidad: 'Es diminutivo de «mano»: la que señala. Por su forma también se las llama agujas o saetas.',
-      dibujo: `
-        <path class="f" d="M64 40 A26 26 0 0 1 102 22 Z M176 40 A26 26 0 0 0 138 22 Z"/>
-        <path d="M86 34 L78 28 M154 34 L162 28"/>
-        <circle class="fondo" cx="120" cy="96" r="62"/>
-        <circle class="fino" cx="120" cy="96" r="54"/>
-        <path class="fino" d="M120 46 L120 54 M120 138 L120 146 M70 96 L78 96 M162 96 L170 96 M145 53 L141 60 M95 139 L99 132 M163 71 L156 75 M77 121 L84 117 M163 121 L156 117 M77 71 L84 75 M145 139 L141 132 M95 53 L99 60"/>
-        <path class="mango" d="M120 96 L150 80"/>
-        <path d="M120 96 L104 52"/>
-        <circle class="t" cx="120" cy="96" r="4"/>
-        <path d="M84 150 L72 168 M156 150 L168 168"/>`,
+      dibujo: DESPERTADOR,
       senal: [140, 85],
       rotulo: [208, 128],
     },
@@ -1372,13 +1510,7 @@ const DIAS = [
       falsas: ['boca', 'asa', 'panza'],
       definicion: 'Tubo de los botijos y porrones, con un agujero pequeño por donde sale el líquido para beber.',
       curiosidad: 'El botijo enfría el agua porque su barro, sin vidriar, deja que rezume un poco: al evaporarse en la superficie, se lleva el calor del agua que queda dentro.',
-      dibujo: `
-        <path class="fondo" d="M120 50 C170 50 196 82 196 112 C196 146 164 166 120 166 C76 166 44 146 44 112 C44 82 70 50 120 50 Z"/>
-        <path class="fino" d="M52 128 C90 140 150 140 188 128"/>
-        <path class="fondo" d="M86 60 C84 2 156 2 154 60 L144 58 C146 16 94 16 96 58 Z"/>
-        <path class="fondo" d="M146 62 L176 22 L184 28 L160 68 Z"/>
-        <path class="fondo" d="M66 66 L56 48 L80 40 L86 60 Z"/>
-        <ellipse class="f" cx="68" cy="44" rx="13" ry="5" transform="rotate(-18 68 44)"/>`,
+      dibujo: BOTIJO,
       senal: [174, 30],
       rotulo: [218, 70],
     },
@@ -1423,13 +1555,7 @@ const DIAS = [
       falsas: ['puente', 'montura', 'lente'],
       definicion: 'Cada una de las dos varillas articuladas que sujetan las gafas detrás de las orejas.',
       curiosidad: 'Las primeras gafas no tenían patillas: se sostenían con la mano o se pinzaban en la nariz, como los quevedos, que deben su nombre a Francisco de Quevedo, retratado con ellos.',
-      dibujo: `
-        <path class="fondo" d="M30 70 C30 54 86 54 96 70 C100 92 90 112 62 112 C36 112 28 92 30 70 Z"/>
-        <path class="fondo" d="M124 70 C134 54 190 54 190 70 C192 92 184 112 158 112 C130 112 120 92 124 70 Z"/>
-        <path class="fino" d="M40 66 C58 62 74 64 84 70 M134 70 C146 64 166 62 180 66"/>
-        <path d="M96 70 C104 62 116 62 124 70"/>
-        <path d="M190 66 L198 64 L232 104 C234 110 228 116 222 112"/>
-        <path d="M30 66 L22 64 L10 92"/>`,
+      dibujo: GAFAS,
       senal: [214, 86],
       rotulo: [196, 150],
     },
@@ -1440,14 +1566,7 @@ const DIAS = [
       falsas: ['solapa', 'hombrera', 'sisa'],
       definicion: 'Parte de la manga que está más cerca de la muñeca, y especialmente por lo interior o el forro.',
       curiosidad: 'Los botones de las bocamangas son casi siempre de adorno. Se cuenta que Napoleón mandó coserlos para que sus soldados no se limpiaran la nariz con la manga.',
-      dibujo: `
-        <path class="fondo" d="M74 18 L120 34 L166 18 L200 30 L222 150 L196 156 L178 70 L178 176 L62 176 L62 70 L44 156 L18 150 L40 30 Z"/>
-        <path class="f" d="M74 18 L104 30 L112 92 L92 60 L100 50 Z M166 18 L136 30 L128 92 L148 60 L140 50 Z"/>
-        <path d="M120 34 L120 176"/>
-        <circle class="fino" cx="124" cy="112" r="3"/><circle class="fino" cx="124" cy="140" r="3"/>
-        <path class="f" d="M196 156 L222 150 L226 168 L198 172 Z M44 156 L18 150 L14 168 L42 172 Z"/>
-        <circle class="fino" cx="206" cy="162" r="2"/><circle class="fino" cx="214" cy="160" r="2"/>
-        <path class="fino" d="M78 130 L104 130 M136 130 L162 130"/>`,
+      dibujo: CHAQUETA,
       senal: [212, 166],
       rotulo: [218, 112],
     },
@@ -1613,19 +1732,7 @@ const DIAS = [
       falsas: ['clavijero', 'mástil', 'alma'],
       definicion: 'Adorno en forma de espiral o caracol; en el violín y los instrumentos de su familia, el que remata el clavijero.',
       curiosidad: 'Es la misma palabra que el adorno de los capiteles jónicos: del latín «voluta», enrollada. En el violín no suena: es pura tradición.',
-      dibujo: `
-        <path class="fondo" d="M14 160 L124 92 L136 108 L28 174 Z"/>
-        <path class="t" d="M20 160 L116 100 L122 108 L26 168 Z"/>
-        <path class="fondo" d="M122 92 L170 60 L186 78 L136 108 Z"/>
-        <path class="t" d="M134 96 L170 72 L178 80 L140 104 Z"/>
-        <path d="M140 84 L130 70 M156 74 L146 60 M150 112 L160 124 M166 102 L176 114"/>
-        <ellipse class="f" cx="127" cy="65" rx="6" ry="9" transform="rotate(-34 127 65)"/>
-        <ellipse class="f" cx="143" cy="55" rx="6" ry="9" transform="rotate(-34 143 55)"/>
-        <ellipse class="f" cx="163" cy="129" rx="6" ry="9" transform="rotate(-34 163 129)"/>
-        <ellipse class="f" cx="179" cy="119" rx="6" ry="9" transform="rotate(-34 179 119)"/>
-        <circle class="fondo" cx="198" cy="44" r="25"/>
-        <path d="M181.0 61.0 L180.3 60.1 L179.7 59.3 L179.0 58.4 L178.4 57.5 L177.9 56.6 L177.4 55.6 L176.9 54.6 L176.5 53.6 L176.2 52.6 L175.9 51.6 L175.6 50.6 L175.4 49.6 L175.2 48.5 L175.1 47.5 L175.0 46.4 L175.0 45.4 L175.0 44.3 L175.1 43.3 L175.2 42.2 L175.4 41.2 L175.6 40.2 L175.8 39.2 L176.1 38.2 L176.5 37.2 L176.8 36.3 L177.3 35.4 L177.7 34.5 L178.2 33.6 L178.8 32.7 L179.4 31.9 L180.0 31.1 L180.6 30.3 L181.3 29.6 L182.0 28.9 L182.8 28.2 L183.5 27.6 L184.3 27.0 L185.2 26.4 L186.0 25.9 L186.9 25.5 L187.7 25.0 L188.6 24.6 L189.5 24.3 L190.5 24.0 L191.4 23.7 L192.4 23.5 L193.3 23.3 L194.3 23.2 L195.2 23.1 L196.2 23.0 L197.1 23.0 L198.1 23.1 L199.0 23.2 L200.0 23.3 L200.9 23.5 L201.8 23.7 L202.7 23.9 L203.6 24.2 L204.5 24.5 L205.3 24.9 L206.2 25.3 L207.0 25.8 L207.8 26.2 L208.5 26.7 L209.3 27.3 L210.0 27.9 L210.7 28.5 L211.3 29.1 L211.9 29.8 L212.5 30.5 L213.1 31.2 L213.6 31.9 L214.1 32.7 L214.5 33.4 L214.9 34.2 L215.3 35.0 L215.6 35.8 L215.9 36.7 L216.2 37.5 L216.4 38.4 L216.6 39.2 L216.7 40.1 L216.8 40.9 L216.9 41.8 L216.9 42.7 L216.9 43.5 L216.8 44.4 L216.7 45.2 L216.6 46.1 L216.4 46.9 L216.2 47.7 L216.0 48.6 L215.7 49.3 L215.4 50.1 L215.0 50.9 L214.7 51.6 L214.2 52.3 L213.8 53.0 L213.3 53.7 L212.8 54.4 L212.3 55.0 L211.7 55.6 L211.1 56.2 L210.5 56.7 L209.9 57.2 L209.2 57.7 L208.6 58.1 L207.9 58.6 L207.2 58.9 L206.5 59.3 L205.7 59.6 L205.0 59.9 L204.3 60.1 L203.5 60.3 L202.7 60.5 L202.0 60.7 L201.2 60.8 L200.4 60.8 L199.7 60.9 L198.9 60.9 L198.1 60.8 L197.4 60.8 L196.6 60.7 L195.9 60.5 L195.1 60.3 L194.4 60.1 L193.7 59.9 L193.0 59.6 L192.3 59.3 L191.6 59.0 L191.0 58.6 L190.4 58.3 L189.7 57.8 L189.2 57.4 L188.6 56.9 L188.1 56.5 L187.5 56.0 L187.0 55.4 L186.6 54.9 L186.1 54.3 L185.7 53.7 L185.4 53.1 L185.0 52.5 L184.7 51.9 L184.4 51.2 L184.1 50.6 L183.9 49.9 L183.7 49.3 L183.5 48.6 L183.4 47.9 L183.3 47.2 L183.2 46.6 L183.2 45.9 L183.2 45.2 L183.2 44.5 L183.2 43.8 L183.3 43.2 L183.4 42.5 L183.6 41.9 L183.7 41.2 L183.9 40.6 L184.2 40.0 L184.4 39.4 L184.7 38.8 L185.0 38.2 L185.3 37.7 L185.7 37.1 L186.1 36.6 L186.5 36.1 L186.9 35.6 L187.3 35.2 L187.8 34.7 L188.2 34.3 L188.7 33.9 L189.2 33.6 L189.8 33.2 L190.3 32.9 L190.8 32.6 L191.4 32.3 L191.9 32.1 L192.5 31.9 L193.1 31.7 L193.7 31.6 L194.3 31.4 L194.8 31.3 L195.4 31.3 L196.0 31.2 L196.6 31.2 L197.2 31.2 L197.8 31.3 L198.4 31.3 L198.9 31.4 L199.5 31.5 L200.0 31.7 L200.6 31.8 L201.1 32.0 L201.6 32.2 L202.2 32.5 L202.7 32.7 L203.1 33.0 L203.6 33.3 L204.1 33.6 L204.5 33.9 L204.9 34.3 L205.3 34.7 L205.7 35.0 L206.0 35.4 L206.4 35.9 L206.7 36.3 L207.0 36.7 L207.3 37.2 L207.5 37.6 L207.7 38.1 L207.9 38.6 L208.1 39.1 L208.3 39.5 L208.4 40.0 L208.5 40.5 L208.6 41.0 L208.7 41.5 L208.7 42.0 L208.8 42.5 L208.7 43.0 L208.7 43.5 L208.7 44.0 L208.6 44.5 L208.5 45.0 L208.4 45.4 L208.3 45.9 L208.1 46.3 L207.9 46.8 L207.7 47.2 L207.5 47.6 L207.3 48.0 L207.1 48.4 L206.8 48.8 L206.5 49.2 L206.2 49.5 L205.9 49.8 L205.6 50.2 L205.3 50.5 L204.9 50.7 L204.6 51.0 L204.2 51.3 L203.8 51.5 L203.5 51.7 L203.1 51.9 L202.7 52.0 L202.3 52.2 L201.9 52.3 L201.5 52.4 L201.1 52.5 L200.7 52.6 L200.3 52.7 L199.9 52.7 L199.4 52.7 L199.0 52.7 L198.6 52.7 L198.2 52.7 L197.8 52.6 L197.5 52.5 L197.1 52.4 L196.7 52.3 L196.3 52.2 L196.0 52.1 L195.6 51.9 L195.3 51.7 L195.0 51.5 L194.7 51.3 L194.4 51.1 L194.1 50.9 L193.8 50.7 L193.5 50.4 L193.3 50.2 L193.0 49.9 L192.8 49.6 L192.6 49.4 L192.4 49.1 L192.2 48.8 L192.1 48.5 L191.9 48.2 L191.8 47.8 L191.7 47.5 L191.6 47.2 L191.5 46.9 L191.4 46.6 L191.4 46.3 L191.3 45.9 L191.3 45.6 L191.3 45.3 L191.3 45.0 L191.3 44.7 L191.4 44.4 L191.4 44.1 L191.5 43.8 L191.6 43.5 L191.6 43.2 L191.7 42.9 L191.9 42.6 L192.0 42.4 L192.1 42.1 L192.3 41.9 L192.4 41.7 L192.6 41.4 L192.8 41.2 L192.9 41.0 L193.1 40.8 L193.3 40.6 L193.5 40.5 L193.7 40.3 L194.0 40.2 L194.2 40.0 L194.4 39.9 L194.6 39.8 L194.9 39.7 L195.1 39.6 L195.3 39.5 L195.6 39.4 L195.8 39.4 L196.0 39.4 L196.3 39.3 L196.5 39.3 L196.7 39.3 L197.0 39.3 L197.2 39.3 L197.4 39.3 L197.6 39.4 L197.8 39.4 L198.0 39.5 L198.2 39.5 L198.4 39.6 L198.6 39.7 L198.8 39.8 L199.0 39.9 L199.1 40.0 L199.3 40.1 L199.5 40.2 L199.6 40.4 L199.7 40.5 L199.9 40.6 L200.0 40.8 L200.1 40.9 L200.2 41.0 L200.3 41.2 L200.4 41.3 L200.5 41.5 L200.5 41.7 L200.6 41.8 L200.6 42.0 L200.7 42.1 L200.7 42.3 L200.7 42.4 L200.8 42.6 L200.8 42.7 L200.8 42.9 L200.8 43.0 L200.7 43.2 L200.7 43.3 L200.7 43.4 L200.6 43.6"/>
-        <circle class="t" cx="198.0" cy="44" r="2.5"/>`,
+      dibujo: VIOLIN,
       senal: [216, 30],
       rotulo: [228, 92],
     },
@@ -1703,18 +1810,7 @@ const DIAS = [
       falsas: ['apagador', 'tecla', 'clavija'],
       definicion: 'Pieza del piano, a modo de mazo, con mango delgado y cabeza forrada de fieltro, que golpea la cuerda correspondiente.',
       curiosidad: 'Gracias a él el piano es, en rigor, un instrumento de percusión: la cuerda no se pulsa, como en el clave, sino que se golpea.',
-      dibujo: `
-        <path d="M8 34 L232 34"/><path class="fino" d="M8 28 L232 28"/>
-        <path class="f" d="M160 36 L184 36 L184 50 L160 50 Z"/>
-        <path class="fino" d="M172 50 L172 112"/>
-        <path class="mango" d="M110 60 L110 130"/>
-        <path class="f" d="M98 52 C98 40 122 40 122 52 L122 64 L98 64 Z"/>
-        <path class="fino" d="M98 52 C104 47 116 47 122 52"/>
-        <circle class="fondo" cx="110" cy="134" r="6"/>
-        <path class="fondo" d="M14 148 L226 148 L226 160 L14 160 Z"/>
-        <path class="t" d="M150 160 L162 160 L156 172 Z"/>
-        <path d="M110 140 L112 148 M172 112 L176 148"/>
-        <path class="fondo" d="M8 142 L40 142 L40 162 L8 162 Z"/>`,
+      dibujo: PIANO,
       senal: [110, 46],
       rotulo: [44, 70],
     },
@@ -2126,17 +2222,7 @@ const DIAS = [
       falsas: ['párpado', 'ceja', 'pestaña'],
       definicion: 'Extremidad del ojo próxima a la nariz.',
       curiosidad: 'Por ahí desaguan las lágrimas hacia la nariz: por eso, cuando se llora, hay que sonarse.',
-      dibujo: `
-        <path class="fino" d="M30 44 C70 20 160 18 206 46"/>
-        <path class="fondo" d="M36 96 C70 52 160 44 210 90 C164 136 72 140 36 96 Z"/>
-        <path class="fino" d="M48 80 C80 52 152 46 196 76"/>
-        <circle class="f" cx="124" cy="92" r="30"/>
-        <circle class="t" cx="124" cy="92" r="12"/>
-        <circle class="fondo" cx="130" cy="86" r="3.5"/>
-        <path class="fino" d="M104 78 L96 82 M144 78 L152 82 M110 70 L104 74 M138 70 L144 74"/>
-        <path class="f" d="M36 96 C42 90 48 90 52 96 C48 102 42 102 36 96 Z"/>
-        <path class="fino" d="M76 66 L72 56 M96 58 L94 46 M120 54 L120 42 M144 56 L148 44 M168 62 L174 52 M188 72 L196 64"/>
-        <path class="fino" d="M70 124 C110 140 160 134 200 104"/>`,
+      dibujo: OJO,
       senal: [44, 96],
       rotulo: [22, 150],
     },
@@ -3251,6 +3337,762 @@ const DIAS = [
       dibujo: ALMEJA,
       senal: [120, 42],
       rotulo: [200, 16],
+    },
+  ],
+  /* ---------- Día 66 ---------- */
+  [
+    {
+      palabra: 'sillín',
+      genero: 'm.',
+      campo: 'La bicicleta',
+      falsas: ['manillar', 'guardabarros', 'cuadro'],
+      definicion: 'Asiento de la bicicleta y de otros vehículos parecidos.',
+      curiosidad: 'Es el diminutivo de «silla». El de las primeras bicicletas, de cuero y con muelles, se parecía a una silla de montar en pequeño.',
+      dibujo: BICICLETA,
+      senal: [100, 60],
+      rotulo: [40, 30],
+    },
+    {
+      palabra: 'concha',
+      genero: 'f.',
+      campo: 'La oreja',
+      falsas: ['antihélice', 'trago', 'hélice'],
+      definicion: 'Parte cóncava del pabellón de la oreja, que conduce al conducto auditivo.',
+      curiosidad: 'Se llama así por su parecido con la concha de un molusco. Recoge el sonido y lo encamina hacia dentro, como un embudo.',
+      dibujo: OREJA,
+      senal: [118, 92],
+      rotulo: [200, 150],
+    },
+    {
+      palabra: 'tejuelo',
+      genero: 'm.',
+      campo: 'El libro',
+      falsas: ['cabezada', 'nervio', 'guarda'],
+      definicion: 'Cuadrito de piel o de papel que se pega en el lomo de un libro para poner el rótulo; también, el propio rótulo.',
+      curiosidad: 'En las bibliotecas, el tejuelo lleva la signatura con la que se coloca el libro en la estantería.',
+      dibujo: LIBRO,
+      senal: [72, 108],
+      rotulo: [20, 40],
+    },
+  ],
+  /* ---------- Día 67 ---------- */
+  [
+    {
+      palabra: 'tacón',
+      genero: 'm.',
+      campo: 'El zapato',
+      falsas: ['plantilla', 'contrafuerte', 'empella'],
+      definicion: 'Pieza semicircular, más o menos alta, unida exteriormente a la suela del calzado en la parte que corresponde al calcañar.',
+      curiosidad: 'Los tacones altos los llevaban primero los hombres: en el siglo XVII eran signo de nobleza en la corte francesa.',
+      dibujo: ZAPATO,
+      senal: [44, 148],
+      rotulo: [20, 172],
+    },
+    {
+      palabra: 'dintel',
+      genero: 'm.',
+      campo: 'La puerta',
+      falsas: ['umbral', 'quicio', 'batiente'],
+      definicion: 'Parte superior de las puertas, ventanas y otros huecos, que carga sobre las jambas.',
+      curiosidad: 'Del latín «limitellus», diminutivo de «limes», límite. Su pareja de abajo es el umbral.',
+      dibujo: PUERTA_JAMBAS,
+      senal: [120, 26],
+      rotulo: [200, 8],
+    },
+    {
+      palabra: 'galladura',
+      genero: 'f.',
+      campo: 'El huevo',
+      falsas: ['chalaza', 'clara', 'cutícula'],
+      definicion: 'Pinta como una lenteja, de color blanquecino, que se halla en la yema del huevo de gallina y que, cuando el huevo está fecundado, se convierte en el embrión.',
+      curiosidad: 'Su nombre viene de «gallar», que es lo que hace el gallo con la gallina. También se llama disco germinal.',
+      dibujo: HUEVO,
+      senal: [128, 61],
+      rotulo: [172, 8],
+    },
+  ],
+  /* ---------- Día 68 ---------- */
+  [
+    {
+      palabra: 'esfera',
+      genero: 'f.',
+      campo: 'El despertador',
+      falsas: ['campanilla', 'manecilla', 'bisel'],
+      definicion: 'Círculo en que giran las manecillas del reloj.',
+      curiosidad: 'Que sea redonda no es casualidad: las manecillas dan vueltas y vueltas sobre ella. Hoy hay relojes cuadrados, pero se sigue llamando esfera.',
+      dibujo: DESPERTADOR,
+      senal: [88, 124],
+      rotulo: [24, 172],
+    },
+    {
+      palabra: 'pasamanos',
+      genero: 'm.',
+      campo: 'La escalera',
+      falsas: ['zanca', 'huella', 'descansillo'],
+      definicion: 'Listón que se coloca sobre las barandillas.',
+      curiosidad: 'Se llama así porque sobre él se pasa la mano al subir o bajar. También se dice pasamano.',
+      dibujo: ESCALERA,
+      senal: [150, 46],
+      rotulo: [196, 8],
+    },
+    {
+      palabra: 'cachas',
+      genero: 'f. pl.',
+      campo: 'El cuchillo (mango en corte)',
+      falsas: ['recazo', 'virola', 'contrafilo'],
+      definicion: 'Cada una de las dos chapas que forman el mango de las navajas, de algunos cuchillos y de otras armas.',
+      curiosidad: 'De ahí viene «hasta las cachas»: el cuchillo clavado hasta el mango, es decir, del todo.',
+      dibujo: CUCHILLO,
+      senal: [200, 111],
+      rotulo: [210, 40],
+    },
+  ],
+  /* ---------- Día 69 ---------- */
+  [
+    {
+      palabra: 'iris',
+      genero: 'm.',
+      campo: 'El ojo',
+      falsas: ['córnea', 'pupila', 'esclerótica'],
+      definicion: 'Disco membranoso y coloreado del ojo, en cuyo centro está la pupila.',
+      curiosidad: 'Iris era la mensajera de los dioses griegos, que bajaba a la tierra por el arcoíris. El ojo lo tomó por sus colores.',
+      dibujo: OJO,
+      senal: [146, 112],
+      rotulo: [200, 160],
+    },
+    {
+      palabra: 'cepo',
+      genero: 'm.',
+      campo: 'El ancla',
+      falsas: ['uña', 'caña', 'cruz'],
+      definicion: 'Pieza que va en el extremo de la caña del ancla, perpendicular a los brazos, para que una de las uñas se clave en el fondo.',
+      curiosidad: 'Al caer de lado, el cepo hace girar el ancla para que una uña muerda el fondo. Las anclas modernas, sin cepo, se guardan mejor.',
+      dibujo: ANCLA,
+      senal: [92, 37],
+      rotulo: [24, 20],
+    },
+    {
+      palabra: 'apagador',
+      genero: 'm.',
+      campo: 'El piano, por dentro',
+      falsas: ['martinete', 'clavija', 'tecla'],
+      definicion: 'Pieza del piano que, al dejar de pulsar la tecla, se apoya sobre las cuerdas para que dejen de sonar.',
+      curiosidad: 'Cuando se pisa el pedal derecho, todos los apagadores se levantan a la vez y las notas se alargan.',
+      dibujo: PIANO,
+      senal: [174, 46],
+      rotulo: [210, 90],
+    },
+  ],
+  /* ---------- Día 70 ---------- */
+  [
+    {
+      palabra: 'mástil',
+      genero: 'm.',
+      campo: 'El velero',
+      falsas: ['bauprés', 'botavara', 'quilla'],
+      definicion: 'Palo de una embarcación, que sostiene las velas.',
+      curiosidad: 'También se llama mástil el palo largo de la guitarra o del violín donde se pisan las cuerdas.',
+      dibujo: VELERO,
+      senal: [119, 85],
+      rotulo: [150, 20],
+    },
+    {
+      palabra: 'ceja',
+      genero: 'f.',
+      campo: 'La guitarra',
+      falsas: ['clavija', 'boca', 'puente'],
+      definicion: 'Listón que tienen los instrumentos de cuerda en el extremo del mástil, junto a las clavijas, por donde pasan las cuerdas.',
+      curiosidad: 'La cejilla que se pone en el mástil para subir el tono hace las veces de una ceja móvil.',
+      dibujo: GUITARRA,
+      senal: [200, 90],
+      rotulo: [196, 150],
+    },
+    {
+      palabra: 'ación',
+      genero: 'f.',
+      campo: 'La silla de montar',
+      falsas: ['cincha', 'baticola', 'grupera'],
+      definicion: 'Correa de que pende el estribo en la silla de montar.',
+      curiosidad: 'Acortar o alargar las aciones es ajustar la altura de los estribos a las piernas del jinete.',
+      dibujo: SILLA_MONTAR,
+      senal: [115, 126],
+      rotulo: [190, 140],
+    },
+  ],
+  /* ---------- Día 71 ---------- */
+  [
+    {
+      palabra: 'casco',
+      genero: 'm.',
+      campo: 'El caballo',
+      falsas: ['crin', 'cerneja', 'grupa'],
+      definicion: 'Uña de las caballerías, que se corta y se alisa para clavar la herradura.',
+      curiosidad: 'Es de la misma materia que nuestras uñas, y crece sin parar: por eso hay que recortarlo cada pocas semanas.',
+      dibujo: CABALLO,
+      senal: [76, 166],
+      rotulo: [24, 160],
+    },
+    {
+      palabra: 'bomba',
+      genero: 'f.',
+      campo: 'La trompeta',
+      falsas: ['boquilla', 'pistón', 'pabellón'],
+      definicion: 'En algunos instrumentos de metal, tubo en forma de U que se desliza para afinar.',
+      curiosidad: 'Moviéndola un poco se alarga o se acorta el tubo, y con él baja o sube la afinación del instrumento.',
+      dibujo: TROMPETA,
+      senal: [70, 118],
+      rotulo: [60, 160],
+    },
+    {
+      palabra: 'clavera',
+      genero: 'f.',
+      campo: 'La herradura',
+      falsas: ['callo', 'lumbre', 'ramplón'],
+      definicion: 'Agujero de la herradura por donde entran los clavos.',
+      curiosidad: 'Una herradura suele tener seis u ocho claveras, repartidas por los dos ramales.',
+      dibujo: HERRADURA,
+      senal: [68, 100],
+      rotulo: [20, 60],
+    },
+  ],
+  /* ---------- Día 72 ---------- */
+  [
+    {
+      palabra: 'párpado',
+      genero: 'm.',
+      campo: 'El ojo',
+      falsas: ['pestaña', 'iris', 'lagrimal'],
+      definicion: 'Cada una de las membranas movibles, cubiertas de piel, que sirven para resguardar el ojo.',
+      curiosidad: 'Parpadeamos unas quince veces por minuto, sin darnos cuenta, para mantener el ojo húmedo y limpio.',
+      dibujo: OJO,
+      senal: [100, 62],
+      rotulo: [40, 24],
+    },
+    {
+      palabra: 'plinto',
+      genero: 'm.',
+      campo: 'La columna',
+      falsas: ['fuste', 'ábaco', 'basa'],
+      definicion: 'Parte cuadrada inferior de la basa de una columna.',
+      curiosidad: 'Por su parecido, también se llama plinto el aparato de gimnasia, de cajones apilados, sobre el que se salta.',
+      dibujo: COLUMNA,
+      senal: [120, 166],
+      rotulo: [210, 150],
+    },
+    {
+      palabra: 'toquilla',
+      genero: 'f.',
+      campo: 'El sombrero',
+      falsas: ['badana', 'ala', 'copa'],
+      definicion: 'Adorno de gasa, cinta o galón que se pone alrededor de la copa del sombrero.',
+      curiosidad: 'También se llama toquilla la paja con que se tejen los sombreros de jipijapa, los famosos «panamás».',
+      dibujo: SOMBRERO,
+      senal: [110, 106],
+      rotulo: [60, 150],
+    },
+  ],
+  /* ---------- Día 73 ---------- */
+  [
+    {
+      palabra: 'puntera',
+      genero: 'f.',
+      campo: 'El zapato',
+      falsas: ['talón', 'lengüeta', 'contrafuerte'],
+      definicion: 'Parte del calzado que cubre la punta del pie.',
+      curiosidad: 'En las botas de trabajo se refuerza con acero para proteger los dedos.',
+      dibujo: ZAPATO,
+      senal: [214, 132],
+      rotulo: [200, 166],
+    },
+    {
+      palabra: 'yugo',
+      genero: 'm.',
+      campo: 'La campana',
+      falsas: ['badajo', 'hombro', 'labio'],
+      definicion: 'Armazón de madera de la que cuelga la campana, y que sirve para voltearla.',
+      curiosidad: 'Se llama así por su parecido con el yugo de los bueyes, el madero que los une por el cuello.',
+      dibujo: CAMPANA,
+      senal: [120, 14],
+      rotulo: [200, 30],
+    },
+    {
+      palabra: 'chalaza',
+      genero: 'f.',
+      campo: 'El huevo',
+      falsas: ['galladura', 'clara', 'yema'],
+      definicion: 'Cada uno de los dos ligamentos en forma de cordón retorcido que sujetan la yema en el centro del huevo.',
+      curiosidad: 'Son esos hilillos blancos que se ven al cascar un huevo. Cuanto más marcados, más fresco es.',
+      dibujo: HUEVO,
+      senal: [76, 90],
+      rotulo: [40, 170],
+    },
+  ],
+  /* ---------- Día 74 ---------- */
+  [
+    {
+      palabra: 'grifo',
+      genero: 'm.',
+      campo: 'El lavabo',
+      falsas: ['rebosadero', 'sifón', 'pedestal'],
+      definicion: 'Llave colocada en la boca de las cañerías y en ciertos depósitos de líquidos para regular su paso.',
+      curiosidad: 'Se llama así por el grifo, el animal fabuloso con cabeza de águila: los caños antiguos tenían a menudo forma de cabeza de animal.',
+      dibujo: LAVABO,
+      senal: [124, 34],
+      rotulo: [200, 20],
+    },
+    {
+      palabra: 'botón',
+      genero: 'm.',
+      campo: 'La gorra',
+      falsas: ['gajo', 'visera', 'cinta'],
+      definicion: 'Pieza redonda que remata la parte más alta de la copa de una gorra.',
+      curiosidad: 'Cubre el punto donde se cosen todos los gajos de la copa. Algunos lo llaman también, en broma, el «pompón».',
+      dibujo: GORRA,
+      senal: [124, 46],
+      rotulo: [60, 20],
+    },
+    {
+      palabra: 'cama',
+      genero: 'f.',
+      campo: 'El arado',
+      falsas: ['telera', 'dental', 'esteva'],
+      definicion: 'Pieza encorvada del arado, en la que encaja por delante la reja y por detrás la esteva.',
+      curiosidad: 'La cama es la pieza que va casi rozando el suelo; sobre ella descansa todo el arado.',
+      dibujo: ARADO,
+      senal: [80, 148],
+      rotulo: [40, 100],
+    },
+  ],
+  /* ---------- Día 75 ---------- */
+  [
+    {
+      palabra: 'planta',
+      genero: 'f.',
+      campo: 'El pie',
+      falsas: ['empeine', 'tobillo', 'talón'],
+      definicion: 'Parte inferior del pie, que sirve para sostener el cuerpo y para andar.',
+      curiosidad: 'Por eso se llaman plantígrados los animales que, como el oso o nosotros, apoyan toda la planta al andar.',
+      dibujo: PIE,
+      senal: [100, 148],
+      rotulo: [130, 172],
+    },
+    {
+      palabra: 'tabique',
+      genero: 'm.',
+      campo: 'La nariz',
+      falsas: ['aleta', 'caballete', 'ventana'],
+      definicion: 'Pared delgada de cartílago y hueso que separa las dos fosas nasales.',
+      curiosidad: 'Se le llama tabique nasal, como la pared delgada que separa dos habitaciones.',
+      dibujo: NARIZ,
+      senal: [120, 148],
+      rotulo: [196, 172],
+    },
+    {
+      palabra: 'aquenio',
+      genero: 'm.',
+      campo: 'El diente de león',
+      falsas: ['receptáculo', 'involucro', 'vilano'],
+      definicion: 'Fruto seco con una sola semilla, unida a la cáscara solo por un punto.',
+      curiosidad: 'El vilano es el paracaídas; el aquenio, la semilla que viaja colgada de él.',
+      dibujo: DIENTE_DE_LEON,
+      senal: [187, 80],
+      rotulo: [210, 140],
+    },
+  ],
+  /* ---------- Día 76 ---------- */
+  [
+    {
+      palabra: 'manillar',
+      genero: 'm.',
+      campo: 'La bicicleta',
+      falsas: ['sillín', 'horquilla', 'cuadro'],
+      definicion: 'Pieza de la bicicleta o de la motocicleta, encorvada por lo común, en cuyos extremos se apoyan las manos para dirigirla.',
+      curiosidad: 'De «manilla», mango pequeño. En América se dice también «manubrio».',
+      dibujo: BICICLETA,
+      senal: [166, 62],
+      rotulo: [210, 30],
+    },
+    {
+      palabra: 'balaustre',
+      genero: 'm.',
+      campo: 'La escalera',
+      falsas: ['zanca', 'mamperlán', 'contrahuella'],
+      definicion: 'Cada una de las columnitas que forman la barandilla de una escalera o de un balcón.',
+      curiosidad: 'Viene del italiano «balaustro», que era la flor del granado: los balaustres torneados recordaban su forma.',
+      dibujo: ESCALERA,
+      senal: [145, 66],
+      rotulo: [196, 30],
+    },
+    {
+      palabra: 'tajamar',
+      genero: 'm.',
+      campo: 'El puente',
+      falsas: ['pretil', 'dovela', 'estribo'],
+      definicion: 'Parte de fábrica que se adiciona a las pilas de los puentes, aguas arriba y aguas abajo, en forma angular, para cortar el agua.',
+      curiosidad: 'Corta la corriente para que no golpee de frente la pila. En los barcos, el tajamar es la pieza que corta el agua en la proa.',
+      dibujo: PUENTE,
+      senal: [120, 128],
+      rotulo: [180, 176],
+    },
+  ],
+  /* ---------- Día 77 ---------- */
+  [
+    {
+      palabra: 'pestaña',
+      genero: 'f.',
+      campo: 'El ojo',
+      falsas: ['ceja', 'párpado', 'iris'],
+      definicion: 'Cada uno de los pelos que hay en los bordes de los párpados.',
+      curiosidad: 'Protegen el ojo del polvo. «Quemarse las pestañas» es estudiar mucho, a la luz de una vela.',
+      dibujo: OJO,
+      senal: [146, 50],
+      rotulo: [196, 24],
+    },
+    {
+      palabra: 'diapasón',
+      genero: 'm.',
+      campo: 'El violín',
+      falsas: ['clavijero', 'cordal', 'voluta'],
+      definicion: 'Listón de madera que cubre el mástil de los instrumentos de cuerda y sobre el cual se pisan las cuerdas.',
+      curiosidad: 'También se llama diapasón la horquilla de acero que da la nota la para afinar.',
+      dibujo: VIOLIN,
+      senal: [150, 84],
+      rotulo: [100, 30],
+    },
+    {
+      palabra: 'marbete',
+      genero: 'm.',
+      campo: 'La botella',
+      falsas: ['gollete', 'precinto', 'culo'],
+      definicion: 'Cédula que se adhiere a las mercancías, en la que se indica la marca, el contenido o el precio.',
+      curiosidad: 'Es otra palabra para «etiqueta», más antigua y hoy poco usada.',
+      dibujo: BOTELLA,
+      senal: [122, 136],
+      rotulo: [200, 150],
+    },
+  ],
+  /* ---------- Día 78 ---------- */
+  [
+    {
+      palabra: 'asa',
+      genero: 'f.',
+      campo: 'El botijo',
+      falsas: ['pitorro', 'boca', 'panza'],
+      definicion: 'Parte que sobresale del cuerpo de una vasija, en forma de arco, y que sirve para asirla.',
+      curiosidad: 'El botijo tiene dos agujeros: la boca, para llenarlo, y el pitorro, para beber a chorro.',
+      dibujo: BOTIJO,
+      senal: [118, 34],
+      rotulo: [60, 10],
+    },
+    {
+      palabra: 'lumbre',
+      genero: 'f.',
+      campo: 'La herradura',
+      falsas: ['callo', 'clavera', 'ramplón'],
+      definicion: 'Parte delantera de la herradura, la que corresponde a la punta del casco.',
+      curiosidad: 'Es la parte que más se gasta, porque es la que primero toca el suelo al empujar.',
+      dibujo: HERRADURA,
+      senal: [120, 30],
+      rotulo: [196, 12],
+    },
+    {
+      palabra: 'témpano',
+      genero: 'm.',
+      campo: 'El tonel',
+      falsas: ['duela', 'bitoque', 'aro'],
+      definicion: 'Tapa de la cuba o del tonel.',
+      curiosidad: 'También es el pedazo de hielo que flota en el mar y, en origen, la piel tensa del tambor o del pandero.',
+      dibujo: TONEL,
+      senal: [188, 96],
+      rotulo: [224, 150],
+    },
+  ],
+  /* ---------- Día 79 ---------- */
+  [
+    {
+      palabra: 'varilla',
+      genero: 'f.',
+      campo: 'El paraguas',
+      falsas: ['contera', 'puño', 'cazoleta'],
+      definicion: 'Cada una de las piezas largas y delgadas que forman la armazón del paraguas.',
+      curiosidad: 'Cuando el viento vuelve el paraguas del revés, lo que se dobla son las varillas.',
+      dibujo: PARAGUAS,
+      senal: [112, 76],
+      rotulo: [40, 70],
+    },
+    {
+      palabra: 'faldón',
+      genero: 'm.',
+      campo: 'La silla de montar',
+      falsas: ['perilla', 'arzón', 'baste'],
+      definicion: 'Cada una de las piezas de la silla de montar que caen a los lados y protegen las piernas del jinete.',
+      curiosidad: 'Evitan que las correas de la silla y el sudor del caballo rocen las piernas del jinete.',
+      dibujo: SILLA_MONTAR,
+      senal: [144, 112],
+      rotulo: [196, 120],
+    },
+    {
+      palabra: 'peña',
+      genero: 'f.',
+      campo: 'El martillo',
+      falsas: ['boca', 'ojo', 'cuña'],
+      definicion: 'Parte opuesta a la boca de algunos martillos, más estrecha.',
+      curiosidad: 'Con la peña se empiezan los clavos pequeños o se dobla el metal; con la boca se golpea de lleno.',
+      dibujo: MARTILLO,
+      senal: [192, 48],
+      rotulo: [210, 100],
+    },
+  ],
+  /* ---------- Día 80 ---------- */
+  [
+    {
+      palabra: 'abdomen',
+      genero: 'm.',
+      campo: 'La mariposa',
+      falsas: ['tórax', 'espiritrompa', 'antena'],
+      definicion: 'Parte posterior del cuerpo de los insectos.',
+      curiosidad: 'En la mariposa, las alas y las patas salen del tórax; el abdomen, alargado y blando, va detrás.',
+      dibujo: MARIPOSA,
+      senal: [148, 134],
+      rotulo: [210, 170],
+    },
+    {
+      palabra: 'mechero',
+      genero: 'm.',
+      campo: 'El candelero',
+      falsas: ['arandela', 'pie', 'platillo'],
+      definicion: 'Cañón del candelero en que se pone la vela.',
+      curiosidad: 'Hoy «mechero» es sobre todo el encendedor, pero también es el lugar donde se coloca la mecha.',
+      dibujo: CANDELERO,
+      senal: [114, 92],
+      rotulo: [180, 70],
+    },
+    {
+      palabra: 'callo',
+      genero: 'm.',
+      campo: 'La herradura',
+      falsas: ['lumbre', 'clavera', 'ramplón'],
+      definicion: 'Cada uno de los dos extremos de la herradura.',
+      curiosidad: 'Corresponden a los talones del casco. Algunas herraduras llevan en los callos unos tacos, los ramplones, para no resbalar.',
+      dibujo: HERRADURA,
+      senal: [80, 154],
+      rotulo: [24, 170],
+    },
+  ],
+  /* ---------- Día 81 ---------- */
+  [
+    {
+      palabra: 'cáscara',
+      genero: 'f.',
+      campo: 'El huevo',
+      falsas: ['clara', 'yema', 'chalaza'],
+      definicion: 'Corteza o cubierta exterior de los huevos.',
+      curiosidad: 'Tiene miles de poros diminutos por los que respira el embrión. Su color depende de la raza de la gallina, no de su alimentación.',
+      dibujo: HUEVO,
+      senal: [190, 36],
+      rotulo: [224, 12],
+    },
+    {
+      palabra: 'pretil',
+      genero: 'm.',
+      campo: 'El puente',
+      falsas: ['tajamar', 'dovela', 'estribo'],
+      definicion: 'Murete o vallado de piedra u otra materia que se pone a los lados de los puentes y en otros lugares para evitar caídas.',
+      curiosidad: 'Antiguamente, los vecinos se sentaban en los pretiles a charlar: de ahí el pretil como lugar de tertulia en algunos pueblos.',
+      dibujo: PUENTE,
+      senal: [60, 37],
+      rotulo: [24, 8],
+    },
+    {
+      palabra: 'bisel',
+      genero: 'm.',
+      campo: 'El formón',
+      falsas: ['virola', 'espiga', 'cabo'],
+      definicion: 'Corte oblicuo en el borde de una lámina o plancha.',
+      curiosidad: 'El bisel es lo que da el filo al formón: el ángulo inclinado que se afila en la piedra.',
+      dibujo: FORMON,
+      senal: [26, 98],
+      rotulo: [24, 150],
+    },
+  ],
+  /* ---------- Día 82 ---------- */
+  [
+    {
+      palabra: 'solapa',
+      genero: 'f.',
+      campo: 'La chaqueta',
+      falsas: ['bocamanga', 'faldón', 'hombrera'],
+      definicion: 'Parte del vestido, correspondiente al pecho, que suele ir doblada hacia fuera sobre la misma prenda.',
+      curiosidad: 'En la solapa se ponen las insignias y los broches; de ahí el «ojal de la solapa» para la flor.',
+      dibujo: CHAQUETA,
+      senal: [100, 48],
+      rotulo: [40, 10],
+    },
+    {
+      palabra: 'cuarterón',
+      genero: 'm.',
+      campo: 'La puerta de la calle',
+      falsas: ['peinazo', 'larguero', 'jamba'],
+      definicion: 'Cada uno de los cuadrados que forman los peinazos en las puertas y ventanas.',
+      curiosidad: 'Las puertas de cuarterones, con sus tableros enmarcados, son típicas de las casas antiguas.',
+      dibujo: PUERTA,
+      senal: [100, 150],
+      rotulo: [200, 172],
+    },
+    {
+      palabra: 'barba',
+      genero: 'f.',
+      campo: 'El gallo',
+      falsas: ['cresta', 'espolón', 'obispillo'],
+      definicion: 'Carnosidad que cuelga de la mandíbula inferior de algunas aves, como el gallo.',
+      curiosidad: 'El gallo tiene dos, rojas como la cresta. En la gallina son más pequeñas.',
+      dibujo: GALLO,
+      senal: [133, 66],
+      rotulo: [210, 90],
+    },
+  ],
+  /* ---------- Día 83 ---------- */
+  [
+    {
+      palabra: 'nervio',
+      genero: 'm.',
+      campo: 'La hoja',
+      falsas: ['pecíolo', 'limbo', 'estípula'],
+      definicion: 'Cada uno de los haces fibrosos que recorren las hojas de las plantas y llevan la savia.',
+      curiosidad: 'El nervio central, más grueso, se llama nervio principal o vena media; de él salen los secundarios.',
+      dibujo: HOJA,
+      senal: [150, 58],
+      rotulo: [200, 10],
+    },
+    {
+      palabra: 'puente',
+      genero: 'm.',
+      campo: 'Las gafas',
+      falsas: ['patilla', 'charnela', 'plaqueta'],
+      definicion: 'Pieza central de la montura de las gafas, que une los dos cristales y se apoya en la nariz.',
+      curiosidad: 'Une las dos lentes como un puente une dos orillas; de ahí el nombre.',
+      dibujo: GAFAS,
+      senal: [118, 58],
+      rotulo: [150, 20],
+    },
+    {
+      palabra: 'pedúnculo',
+      genero: 'm.',
+      campo: 'La flor',
+      falsas: ['sépalo', 'cáliz', 'estambre'],
+      definicion: 'Rama que sostiene una flor, una inflorescencia o un fruto tras la fecundación.',
+      curiosidad: 'En la fruta lo llamamos rabo o rabillo: es el pedúnculo de la flor de la que nació.',
+      dibujo: FLOR,
+      senal: [116, 125],
+      rotulo: [40, 150],
+    },
+  ],
+  /* ---------- Día 84 ---------- */
+  [
+    {
+      palabra: 'ventana',
+      genero: 'f.',
+      campo: 'La nariz',
+      falsas: ['aleta', 'tabique', 'caballete'],
+      definicion: 'Cada uno de los orificios de la nariz.',
+      curiosidad: 'Por ellas entra el aire. También se llaman fosas nasales, aunque las fosas son, en rigor, las cavidades de dentro.',
+      dibujo: NARIZ,
+      senal: [100, 140],
+      rotulo: [40, 172],
+    },
+    {
+      palabra: 'grupa',
+      genero: 'f.',
+      campo: 'El caballo',
+      falsas: ['cruz', 'cerneja', 'crin'],
+      definicion: 'Ancas de una caballería.',
+      curiosidad: 'Llevar a alguien «a la grupa» es llevarlo sentado detrás del jinete, sobre el lomo trasero del caballo.',
+      dibujo: CABALLO,
+      senal: [54, 78],
+      rotulo: [20, 30],
+    },
+    {
+      palabra: 'boca',
+      genero: 'f.',
+      campo: 'El martillo',
+      falsas: ['peña', 'ojo', 'cuña'],
+      definicion: 'Parte plana del martillo con que se golpea.',
+      curiosidad: 'La boca suele ser algo abombada para que el golpe no se desvíe ni deje marca en la madera.',
+      dibujo: MARTILLO,
+      senal: [50, 46],
+      rotulo: [20, 110],
+    },
+  ],
+  /* ---------- Día 85 ---------- */
+  [
+    {
+      palabra: 'plato',
+      genero: 'm.',
+      campo: 'La bicicleta',
+      falsas: ['piñón', 'cubo', 'radio'],
+      definicion: 'En la bicicleta, rueda dentada que mueven los pedales y que, por medio de la cadena, hace girar la rueda trasera.',
+      curiosidad: 'Cuanto mayor es el plato y menor el piñón, más avanza la bicicleta en cada pedalada, pero más cuesta pedalear.',
+      dibujo: BICICLETA,
+      senal: [117, 128],
+      rotulo: [60, 170],
+    },
+    {
+      palabra: 'península',
+      genero: 'f.',
+      campo: 'La costa, en el mapa',
+      falsas: ['ensenada', 'istmo', 'cabo'],
+      definicion: 'Tierra rodeada de agua por todas partes excepto por una, que la une a otra tierra de extensión mayor.',
+      curiosidad: 'Del latín «paeninsula», «casi isla». La unión con el continente, cuando es estrecha, es un istmo.',
+      dibujo: COSTA,
+      senal: [186, 52],
+      rotulo: [210, 150],
+    },
+    {
+      palabra: 'puño',
+      genero: 'm.',
+      campo: 'El paraguas',
+      falsas: ['contera', 'varilla', 'cazoleta'],
+      definicion: 'Mango de algunas cosas, como el paraguas o el bastón.',
+      curiosidad: 'En el paraguas suele tener forma de gancho para poder colgarlo del brazo.',
+      dibujo: PARAGUAS,
+      senal: [122, 12],
+      rotulo: [200, 30],
+    },
+  ],
+  /* ---------- Día 86 ---------- */
+  [
+    {
+      palabra: 'filamento',
+      genero: 'm.',
+      campo: 'La bombilla',
+      falsas: ['casquillo', 'ampolla', 'rosca'],
+      definicion: 'Hilo de metal que se pone incandescente al pasar la corriente en las bombillas.',
+      curiosidad: 'Edison probó miles de materiales hasta dar con uno que durara: un hilo de bambú carbonizado.',
+      dibujo: BOMBILLA,
+      senal: [118, 80],
+      rotulo: [200, 40],
+    },
+    {
+      palabra: 'foque',
+      genero: 'm.',
+      campo: 'El velero',
+      falsas: ['mesana', 'cofa', 'quilla'],
+      definicion: 'Vela triangular que se orienta y amura sobre el bauprés y los botalones de proa.',
+      curiosidad: 'Es la vela de delante. Sirve para dar velocidad y estabilidad y para ayudar a virar.',
+      dibujo: VELERO,
+      senal: [180, 70],
+      rotulo: [210, 30],
+    },
+    {
+      palabra: 'ojete',
+      genero: 'm.',
+      campo: 'El zapato',
+      falsas: ['herrete', 'lengüeta', 'contrafuerte'],
+      definicion: 'Abertura pequeña y redonda, reforzada en su contorno, para meter por ella un cordón.',
+      curiosidad: 'En los zapatos suelen llevar un aro de metal para que el cordón no desgarre la piel.',
+      dibujo: ZAPATO,
+      senal: [104, 82],
+      rotulo: [60, 20],
     },
   ],
 ];
